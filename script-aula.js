@@ -1,4 +1,4 @@
- // Para chamar Id.
+//Para chamar Id.
 
 //const animais = document.getElementById('animais');
 //console.log(animais.innerText);
@@ -62,3 +62,65 @@ const kj = document.querySelector('.animais-descricao h2');
 
 const paragrafos = document.querySelectorAll('p');
 console.log(paragrafos[paragrafos.length -1]);
+
+// Mostre no console cada parágrado do site
+
+const paragrafo = document.querySelectorAll('p'); 
+console.log(paragrafo);
+
+paragrafo.forEach ((item) => {
+    console.log(paragrafo);
+});
+
+// CLASSES E ATRIBUTOS
+
+const menu = document.querySelector('.menu');
+
+menu.className; // string
+menu.classList; // lista de classes
+menu.classList.add('ativo');
+menu.classList.add('ativo', 'mobile'); // duas classes
+menu.classList.remove('ativo');
+menu.classList.toggle('ativo'); // adiciona/remove a classe
+menu.classList.contains('ativo'); // true ou false
+menu.classList.replace('ativo', 'inativo');
+
+
+// ATTRIBUTES 
+
+const animais = document.querySelector('.animais');
+
+animais.attributes; // retorna todos os atributos
+animais.attributes[0]; // retorna o primeiro atributo
+
+// GET E SET
+
+const img = document.querySelector('img');
+
+img.getAttribute('src'); // valor do src
+img.setAttribute('alt', 'Texto Alternativo'); // muda o alt
+img.hasAttribute('id'); // true / false
+img.removeAttribute('alt'); // remove o alt
+
+img.hasAttributes(); // true / false se tem algum atributo
+
+// READ AND ONLY 
+
+//const animais = document.querySelector('.animais');
+
+animais.className; // string com o nome das classes
+animais.className = 'azul'; // substitui completamente a string
+animais.className += ' vermelho'; // adiciona vermelho à string
+
+animais.attributes = 'class="ativo"'; // não funciona, read-only
+
+
+// Adicione a classe ativo a todos os itens do menu
+
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
+
+// Verifique se as imagens possuem o atributo alt
+
+// Modifique o href do link externo no menu
+
+
