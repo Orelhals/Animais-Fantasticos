@@ -3,10 +3,12 @@ import initScroll from './js/modules/scroll.js';
 import initAccordion from './js/modules/accordion.js';
 import initTabNav from './js/modules/tab.js';
 import slide from './js/modules/slide.js';
+import initTooltip from './js/modules/tooltip.js'
 
 initscrollSuave();
 initScroll();
 initAccordion();
 initTabNav();
 //slide();
+initTooltip();
 
